@@ -13,6 +13,7 @@ int dfs(int m, int n) {
 	if (num_of_ways_to_end[m][n] > 0) {
 		return num_of_ways_to_end[m][n];
 	}
+	num_of_ways_to_end[m][n] = 0;
 	int dm[] = { -1, 1, 0, 0 };
 	int dn[] = { 0, 0, -1, 1 };
 	for (int i = 0; i < 4; i++) {
@@ -31,6 +32,7 @@ int main(void) {
 	for (int i = 0; i < M; i++) {
 		for (int j = 0; j < N; j++) {
 			scanf("%d", &height[i][j]);
+			num_of_ways_to_end[i][j] = -1;
 		}
 	}
 
