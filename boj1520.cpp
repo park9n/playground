@@ -10,7 +10,7 @@ int dfs(int m, int n) {
 	if (m == (M - 1) && n == (N - 1)) {
 		return 1;
 	}
-	if (num_of_ways_to_end[m][n] > 0) {
+	if (num_of_ways_to_end[m][n] >= 0) {
 		return num_of_ways_to_end[m][n];
 	}
 	num_of_ways_to_end[m][n] = 0;
