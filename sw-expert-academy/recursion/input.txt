@@ -1,0 +1,4 @@
+3 // 전체 Test case 수
+9 // Test case index
+12
+20

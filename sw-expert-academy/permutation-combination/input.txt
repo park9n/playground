@@ -1,0 +1,4 @@
+1 // # of test case
+ABCD
+3 // n
+2 // k
